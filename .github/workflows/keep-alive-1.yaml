@@ -22,10 +22,10 @@ jobs:
           bun-version: latest
       
       - name: 安装依赖
-        run: bun install
+        run: cd /home/runner/work/Snow-Domain-Smart-Fox/supabase-keep-alive/ && bun install
       
       - name: 执行保活脚本
-        run: bun run scripts/keep-alive-1.ts
+        run: /home/runner/work/Snow-Domain-Smart-Fox/supabase-keep-alive/ && bun run scripts/keep-alive-1.ts
       
       - name: 记录执行时间
         if: always()

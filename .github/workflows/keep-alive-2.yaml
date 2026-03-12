@@ -22,10 +22,10 @@ jobs:
           bun-version: latest
       
       - name: 安装依赖
-        run: bun install
+        run: ls && bun install
       
       - name: 执行保活脚本
-        run: bun run scripts/keep-alive-2.ts
+        run: ls && bun run scripts/keep-alive-2.ts
       
       - name: 记录执行时间
         if: always()
